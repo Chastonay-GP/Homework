@@ -6,8 +6,8 @@ from random import randint
 randomnum = randint(0,20)
 guessesTaken = 0
 
-answers_if_too_high = ["Duh, too high","TOOOOOO HIGH", "YOU HIIIIGH","Very good! ... But too high"]
-answers_if_too_low = ["Duh, too low","TOOOOOO low", "Ain't no mountain high enough","Very good! ... But too low"]
+answers_if_too_high = ["Duh, too high","TOOOOOO HIGH","YOU HIIIIGH","Very good! ... But too high."]
+answers_if_too_low = ["Duh, too low","TOOOOOO low", "Ain't no mountain high enough!","Very good! ... But too low."]
 
 print("I am thinking of a number between 1 and 20.")
 
