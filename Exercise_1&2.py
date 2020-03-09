@@ -12,7 +12,7 @@ print("Hi, {}. Nice to meet you! :D".format(name))
 
 age = int(input('How old are you?'))
 
-next_tenth = ((age + 9) // 10 * 10)
+next_tenth = ((age + 10) // 10 * 10)
 
 age_dif = next_tenth - age
 
