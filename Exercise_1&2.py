@@ -16,7 +16,7 @@ next_tenth = ((age + 10) // 10 * 10)
 
 age_dif = next_tenth - age
 
-print("Wow! {}, in {} years you'll be {}!".format(name,age_dif,next_tenth))
+print("Wow! {}, in {} year(s) you'll be {}!".format(name,age_dif,next_tenth))
 
 gender = input("Are you male of female?")
 
