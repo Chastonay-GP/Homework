@@ -18,5 +18,3 @@ print(precipitation_data)
 #close the file
 file.close()
 
-
-
