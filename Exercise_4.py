@@ -6,15 +6,14 @@
 # The max precipitation
 # The mean precipitation
 
-#Open the file
-file = open("C:/Users/jonas/PycharmProjects/data/V3_precip_data.txt", "r") # 'r' says we are opening the file to read, infile is the opened file object that we will read from
+import pandas as pd
+import numpy as np
 
-#Store the data from the file in a variable
-precipitation_data = file.read()
+# Open the file
 
-#Print the data in the file
-print(precipitation_data)
+df = pd.read_table("C:/Users/jonas/PycharmProjects/data/precip_data.txt")
 
-#close the file
-file.close()
+print(df)
 
+# precipitation to list
+precip_list = df["rre150d0"].values.tolist()
