@@ -11,9 +11,10 @@ import numpy as np
 
 # Open the file
 
-df = pd.read_table("C:/Users/jonas/PycharmProjects/data/precip_data.txt")
+def precifun():
+    df = pd.read_table("C:/Users/jonas/PycharmProjects/data/precip_data.txt",sep=" ")
+    print(df)
+    percip_list = df["rre150d0"].tolist()
+    print(percip_list)
 
-print(df)
-
-# precipitation to list
-precip_list = df["rre150d0"].values.tolist()
+precifun()
