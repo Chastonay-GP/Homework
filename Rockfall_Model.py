@@ -3,6 +3,7 @@
 #Seminar Geodata Analysis and Modelling, Spring Semseter 2020
 
 #imports
+import numpy as np
 import math
 import matplotlib.pyplot as plt
 
