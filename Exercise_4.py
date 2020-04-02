@@ -7,25 +7,21 @@
 # The mean precipitation
 
 import pandas as pd
-import numpy as np
 
 
 # Open the file
 
 def precifun():
-    df = pd.read_table("C:/Users/jonas/PycharmProjects/data/precip_data.txt", sep=" ")
+    df = pd.read_fwf("C:/Users/jonas/PycharmProjects/data/precip_data.txt")
     print(df)
-    precip_list = df["rre150d0"].tolist()
+    precip_list = df["rre150d0"]
     print(precip_list)
-    for n in precip_list:
-        if n != "nan":
-            int(n)
-        return (n)
-    precip_max = max(precip_list)
-    precip_min = min(precip_list)
-    precip_mean = np.mean(precip_list)
-    print(precip_max)
-    print(precip_min)
-    print(precip_mean)
 
 precifun()
+
+precip_max = max(precip_list)
+precip_min = min(precip_list)
+precip_mean = np.mean(precip_list)
+print(precip_max)
+print(precip_min)
+print(precip_mean)
